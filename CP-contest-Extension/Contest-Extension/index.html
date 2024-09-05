@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contests Calender</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+ 
+  <div class="main-div"> 
+
+    <!-- Top Nav-Bar -->
+    <div class="lastoption hidden"></div>
+    <div class="Options">
+        <div class="btnOpt landing" id="btnAllContests">
+            All Contests
+        </div>
+        <div class="btnOpt" id="btnPlatforms">
+            Platforms
+        </div>
+        <div class="btnOpt" id="btnLeetcode">
+            Leetcode Random!
+        </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="body-div">
+
+      <div class="equaldiv " id="AllContests">
+            <div class="optTool">
+              <div class="btnOpt" id="today">
+                 Today
+              </div>
+              <div class="btnOpt landing" id="upcoming">
+                 Upcoming
+              </div>
+              <div class="fil">
+                  <select name="Filter" id="filter">
+                    <option value="dur3">Duration upto 3hrs </option>
+                    <option value="dur24" selected>Duration upto 1day</option>
+                    <option value="durg24">All Contests</option>
+                  </select>
+              </div>
+            </div>
+
+            <div class="tableCon">
+               
+            </div>
+      </div>
+
+
+
+      <div class="equaldiv hidden" id="Setting">
+           <h4>Choose Platforms</h4>
+            <div class="eqplate">
+              <div class="logo">
+                <img src="images/codeforces.png" alt="codeforces" >
+                <span>Codeforces</span>
+              </div>
+              <div class="tick">
+                <input type="checkbox" name="codeforces.com" id="host1" >
+              </div>
+            </div>
+
+            <div class="eqplate">
+              <div class="logo">
+                <img src="images/codechef.png" alt="codechef" >
+                <span>Codechef</span>
+              </div>
+              <div class="tick">
+                <input type="checkbox" name="codechef.com" id="host2" >
+              </div>
+            </div>
+
+            <div class="eqplate">
+              <div class="logo">
+                <img src="images/atcoder.png" alt="atcoder" >
+                <span>Atcoder</span>
+              </div>
+              <div class="tick">
+                <input type="checkbox" name="atcoder.jp" id="host3" >
+              </div>
+            </div>
+
+            <div class="eqplate">
+              <div class="logo">
+                <img src="images/leetcode.png" alt="leetcode" >
+                <span>Leetcode</span>
+              </div>
+              <div class="tick">
+                <input type="checkbox" name="leetcode.com" id="host4" >
+              </div>
+            </div>
+
+            <div class="eqplate">
+              <div class="logo">
+                <img src="images/codingNinja.png" alt="codingNinja" >
+                <span>Coding Ninja</span>
+              </div>
+              <div class="tick">
+                <input type="checkbox" name="codingninjas.com/codestudio" id="host5" >
+              </div>
+            </div>
+
+            <div class="eqplate">
+              <div class="logo">
+                <img src="images/HackerEarth.png" alt="hackerearth" >
+                <span>HackerEarth</span>
+              </div>
+              <div class="tick">
+                <input type="checkbox" name="hackerearth.com" id="host6" >
+              </div>
+            </div>
+
+            <div class="eqplate">
+              <div class="logo">
+                <img src="images/GeeksforGeeks.png" alt="gfg" >
+                <span>GeeksforGeeks</span>
+              </div>
+              <div class="tick">
+                <input type="checkbox" name="geeksforgeeks.org" id="host7" >
+              </div>
+            </div>
+
+            <div class="eqplate">
+              <div class="logo">
+                <img src="images/topcoder.png" alt="Topcoder" >
+                <span>Topcoder</span>
+              </div>
+              <div class="tick">
+                <input type="checkbox" name="topcoder.com" id="host8" >
+              </div>
+            </div>
+
+
+      </div>
+      <div class="equaldiv hidden" id="Leetcode">
+        <h4>Do A Random Leetcode Question!</h4>
+        <div class = "title"></div>
+    	  <div class = "detail">
+			  <span class = "diff"></span>
+			  <div class="btnOpt" id="gotoquestion">
+          Go to question
+       </div>
+    	</div>
+      
+      </div>
+
+    </div>
+  </div>
+
+
+   <script src="js/script.js"></script>
+   <script src="d3/d3.min.js"></script>
+   <script src="d3-random/d3-random.min.js"></script>
+   <script type="text/javascript" src="show.js"></script>
+</body>
+</html>
