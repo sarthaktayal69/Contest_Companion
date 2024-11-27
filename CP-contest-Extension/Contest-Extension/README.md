@@ -1,6 +1,6 @@
 # Contest calender
 #### This is a Chrome Extension that provides information about all upcoming Competitive programming contests across various coding platforms.
-#### While tracking contests it enables the user to practice a randomly generated LeetCode question to brush up on Data science algorithms.
+#### While tracking contests it enables the user to practice a randomly generated LeetCode question to brush up on Data structure and  algorithms.
 
 The contest calendar (with Leetcode random question generator) is a Chrome Extension built on Manifest v2 technologies.
 
